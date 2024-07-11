@@ -38,7 +38,7 @@ public class FillingTests {
 
         Client client2 = new Client();
         client2.setAddress("Севастополь");
-        client2.setExternalId(1L);
+        client2.setExternalId(2L);
         client2.setPhoneNumber("79782280928");
         client2.setFullName("Ковтунов Фёдор Олегович");
         clientRepository.save(client2);
