@@ -3,7 +3,6 @@ package ru.Fedor.tgBot.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "category")
 public class Category {
     @Id
     @GeneratedValue
@@ -13,7 +12,6 @@ public class Category {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "parent_id")
     private Category parent;
 
     public Long getId() {

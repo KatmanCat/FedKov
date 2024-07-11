@@ -3,18 +3,15 @@ package ru.Fedor.tgBot.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "order_product")
 public class OrderProduct {
     @Id
     @GeneratedValue
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "client_order_id", nullable = false)
     private ClientOrder clientOrder;
 
     @ManyToOne
-    @JoinColumn(name = "product_id", nullable = false)
     private Product product;
 
     @Column(nullable = false)

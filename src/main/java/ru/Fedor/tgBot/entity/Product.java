@@ -4,14 +4,12 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
     @Column(nullable = false, unique = true, length = 50)
