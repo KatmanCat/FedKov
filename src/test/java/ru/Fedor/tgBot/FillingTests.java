@@ -126,7 +126,7 @@ public class FillingTests {
 
         // Создание товаров для категорий
 
-        //Товары для категория "Пицца"
+        // Товары для категории "Пицца"
         Product pizza1 = new Product();
         pizza1.setName("Неаполитана");
         pizza1.setDescription("Томатный соус, молодая моцарелла, моцарелла, бекон, томаты черри, соус песто и руккола");
@@ -148,238 +148,238 @@ public class FillingTests {
         pizza3.setCategory(pizza);
         productRepository.save(pizza3);
 
-        //--- Товары для категория "Роллы" ---
+        // Товары для категории "Роллы"
 
-        //Товары для категория "Классические Роллы"
+        // Товары для категории "Классические Роллы"
         Product rollClassic1 = new Product();
         rollClassic1.setName("Филадельфия");
-        rollClassic1.setDescription("Разновидность роллов, обычно сделанные из копченого лосося, сливочного сыра и огурца");
-        rollClassic1.setPrice(BigDecimal.valueOf(599.99));
+        rollClassic1.setDescription("лосось, огурец, сыр сливочный 217 г");
+        rollClassic1.setPrice(BigDecimal.valueOf(600));
         rollClassic1.setCategory(classicRolls);
         productRepository.save(rollClassic1);
 
         Product rollClassic2 = new Product();
         rollClassic2.setName("Калифорния");
-        rollClassic2.setDescription("Разновидность роллов, приготовляемая вывернутым рисом наружу");
-        rollClassic2.setPrice(BigDecimal.valueOf(699.99));
+        rollClassic2.setDescription("краб-крем, авокадо, огурец, икра масаго 212 г");
+        rollClassic2.setPrice(BigDecimal.valueOf(500));
         rollClassic2.setCategory(classicRolls);
         productRepository.save(rollClassic2);
 
         Product rollClassic3 = new Product();
-        rollClassic3.setName("Авакадо ролл");
-        rollClassic3.setDescription("Ролл Авокадо состоит из трех основных ингредиентов – это нори, рис и авокадо");
-        rollClassic3.setPrice(BigDecimal.valueOf(499.99));
+        rollClassic3.setName("Ролл с тунцом");
+        rollClassic3.setDescription("тунец 102 г");
+        rollClassic3.setPrice(BigDecimal.valueOf(350));
         rollClassic3.setCategory(classicRolls);
         productRepository.save(rollClassic3);
 
-        //Товары для категория "Запеченные роллы"
+        // Товары для категории "Запеченные роллы"
 
         Product rollBaked1 = new Product();
-        rollBaked1.setName("Запеченная Филадельфия");
-        rollBaked1.setDescription("Вариация классического суши-ролла Филадельфия, который покрывается специальным соусом и запекается в духовке");
-        rollBaked1.setPrice(BigDecimal.valueOf(589.99));
+        rollBaked1.setName("Ролл Румяный");
+        rollBaked1.setDescription("креветки, сыр сливочный, яки соус, кунжут, унаги соус, масаго 159 г");
+        rollBaked1.setPrice(BigDecimal.valueOf(380));
         rollBaked1.setCategory(bakedRolls);
         productRepository.save(rollBaked1);
 
         Product rollBaked2 = new Product();
-        rollBaked2.setName("Запеченная Калифорния");
-        rollBaked2.setDescription("Вариация классического суши-ролла Калифорния, который покрывается специальным соусом и запекается в духовке");
-        rollBaked2.setPrice(BigDecimal.valueOf(659.99));
+        rollBaked2.setName("Запечённый ролл с угрём и тигровой креветкой");
+        rollBaked2.setDescription("креветка тигровая, угорь, сыр сливочный, авокадо, икра масаго, майонезный соус, унаги соус, кунжут 304 г");
+        rollBaked2.setPrice(BigDecimal.valueOf(650));
         rollBaked2.setCategory(bakedRolls);
         productRepository.save(rollBaked2);
 
         Product rollBaked3 = new Product();
-        rollBaked3.setName("Запеченный динамит");
-        rollBaked3.setDescription("Ролл — это сочное сочетание авокадо, креветок и спайси майонеза. Запекается в духовке до образования золотистой корочки");
-        rollBaked3.setPrice(BigDecimal.valueOf(799.99));
+        rollBaked3.setName("Медовая креветка");
+        rollBaked3.setDescription("креветка тигровая, сыр сливочный, огурец, масаго, сырный соус, медовый соус с горчицей, кунжут 261 г");
+        rollBaked3.setPrice(BigDecimal.valueOf(419));
         rollBaked3.setCategory(bakedRolls);
         productRepository.save(rollBaked3);
 
-        //Товары для категория "Сладкие роллы"
+        // Товары для категории "Сладкие роллы"
 
         Product rollSweet1 = new Product();
-        rollSweet1.setName("Фруктовый ролл ");
+        rollSweet1.setName("Фруктовый ролл");
         rollSweet1.setDescription("Этот сладкий ролл обычно сделан с использованием фруктов, таких как манго, клубника, банан или киви");
-        rollSweet1.setPrice(BigDecimal.valueOf(589.99));
+        rollSweet1.setPrice(BigDecimal.valueOf(590));
         rollSweet1.setCategory(sweetRolls);
         productRepository.save(rollSweet1);
 
         Product rollSweet2 = new Product();
-        rollSweet2.setName("Шоколадный ролл ");
+        rollSweet2.setName("Шоколадный ролл");
         rollSweet2.setDescription("Этот ролл представляет собой комбинацию сладкого риса, клубничного джема, бананов или ягод, завернутых в слой нори и обсыпанных шоколадной крошкой");
-        rollSweet2.setPrice(BigDecimal.valueOf(659.99));
+        rollSweet2.setPrice(BigDecimal.valueOf(670));
         rollSweet2.setCategory(sweetRolls);
         productRepository.save(rollSweet2);
 
         Product rollSweet3 = new Product();
         rollSweet3.setName("Карамельный ролл");
         rollSweet3.setDescription("В этом сладком ролле используется карамель или карамельный соус в сочетании с бананами, орехами или клубникой");
-        rollSweet3.setPrice(BigDecimal.valueOf(799.99));
+        rollSweet3.setPrice(BigDecimal.valueOf(800));
         rollSweet3.setCategory(sweetRolls);
         productRepository.save(rollSweet3);
 
-        //Товары для категория "Наборы"
+        // Товары для категории "Наборы"
 
         Product setRolls1 = new Product();
-        setRolls1.setName("Сет Классический");
-        setRolls1.setDescription("Этот набор роллов включает в себя основные классические варианты, такие как калифорния ролл, филадельфия ролл, спайси тунец ролл и огуречный ролл");
-        setRolls1.setPrice(BigDecimal.valueOf(1589.99));
+        setRolls1.setName("ЛавИз");
+        setRolls1.setDescription("Состав: красный дракон лайт, три сыра, филадельфия креветка, запечённый спайс, запечённый с мидией, запечённый с лососем.");
+        setRolls1.setPrice(BigDecimal.valueOf(1600));
         setRolls1.setCategory(setRolls);
         productRepository.save(setRolls1);
 
         Product setRolls2 = new Product();
-        setRolls2.setName("Сет Экзотика");
-        setRolls2.setDescription("В него могут входить роллы с угрем, копченым лососем, манго или авокадо");
-        setRolls2.setPrice(BigDecimal.valueOf(1659.99));
+        setRolls2.setName("Бум-Бум");
+        setRolls2.setDescription("Состав: филадельфия лосось лайт, филадельфия креветка лайт, запечённый с крабом, запечённый с мидией, запечённый с беконом.");
+        setRolls2.setPrice(BigDecimal.valueOf(1700));
         setRolls2.setCategory(setRolls);
         productRepository.save(setRolls2);
 
         Product setRolls3 = new Product();
-        setRolls3.setName("Сет Веганский");
-        setRolls3.setDescription("В него могут входить роллы с овощами, авокадо, и нори");
-        setRolls3.setPrice(BigDecimal.valueOf(1199.99));
+        setRolls3.setName("ТопЧик");
+        setRolls3.setDescription("Состав: Филадельфия креветка/лосось лайт, Филадельфия с копченным лососем в огурце, Запеченный сырный/спайс краб.");
+        setRolls3.setPrice(BigDecimal.valueOf(1200));
         setRolls3.setCategory(setRolls);
         productRepository.save(setRolls3);
 
-        //--- Товары для категория "Бургеры" ---
+        // Товары для категории "Бургеры"
 
-        //Товары для категория "Классические Бургеры"
+        // Товары для категории "Классические Бургеры"
 
         Product burgersClassic1 = new Product();
         burgersClassic1.setName("Гамбургер");
         burgersClassic1.setDescription("Классический бургер, состоящий из прожаренной котлеты из мяса, обжаренного лука, листьев салата, кетчупа и майонеза в мягкой булочке");
-        burgersClassic1.setPrice(BigDecimal.valueOf(389.99));
+        burgersClassic1.setPrice(BigDecimal.valueOf(65));
         burgersClassic1.setCategory(classicBurgers);
         productRepository.save(burgersClassic1);
 
         Product burgersClassic2 = new Product();
         burgersClassic2.setName("Чизбургер");
         burgersClassic2.setDescription("Вариация гамбургера, в которой добавляется ломтик сыра на котлету перед подачей");
-        burgersClassic2.setPrice(BigDecimal.valueOf(459.99));
+        burgersClassic2.setPrice(BigDecimal.valueOf(78));
         burgersClassic2.setCategory(classicBurgers);
         productRepository.save(burgersClassic2);
 
         Product burgersClassic3 = new Product();
-        burgersClassic3.setName("Мексиканец");
-        burgersClassic3.setDescription("Пряный и ароматный вариант классического бургера. Он часто содержит пряную котлету, сальсу, гуакамоле.");
-        burgersClassic3.setPrice(BigDecimal.valueOf(529.99));
+        burgersClassic3.setName("Чикенбургер");
+        burgersClassic3.setDescription("Обжаренная куриная котлета из сочного куриного мяса, панированная в сухарях, которая подается на карамелизованной булочке, заправленной свежим салатом и специальным соусом");
+        burgersClassic3.setPrice(BigDecimal.valueOf(64));
         burgersClassic3.setCategory(classicBurgers);
         productRepository.save(burgersClassic3);
 
-        //Товары для категория "Острые Бургеры"
+        // Товары для категории "Острые Бургеры"
 
         Product burgersSpicy1 = new Product();
-        burgersSpicy1.setName("Огненный Драконий Бургер");
+        burgersSpicy1.setName("Драконий Бургер");
         burgersSpicy1.setDescription("Этот бургер заполнен силой острых специй и соусов, включая соус срирача, карибский перец скотч боннет, ломтик кимчи и свежая зелень.");
-        burgersSpicy1.setPrice(BigDecimal.valueOf(589.99));
+        burgersSpicy1.setPrice(BigDecimal.valueOf(590));
         burgersSpicy1.setCategory(spicyBurgers);
         productRepository.save(burgersSpicy1);
 
         Product burgersSpicy2 = new Product();
-        burgersSpicy2.setName("Дьявольский Чили Бургер");
+        burgersSpicy2.setName("Чили Бургер");
         burgersSpicy2.setDescription("Этот бургер заправлен крепкими порциями острого чили-кетчупа, пикантным сыром чеддер, горячими пепперони и свежими ломтиками помидора. ");
-        burgersSpicy2.setPrice(BigDecimal.valueOf(559.99));
+        burgersSpicy2.setPrice(BigDecimal.valueOf(560));
         burgersSpicy2.setCategory(spicyBurgers);
         productRepository.save(burgersSpicy2);
 
         Product burgersSpicy3 = new Product();
-        burgersSpicy3.setName("Пламенный Инферно Бургер");
+        burgersSpicy3.setName("Пламенный Бургер");
         burgersSpicy3.setDescription("Состоит из острых чили-котлет, маринованных халапеньо перцев, кисло-сладкого соуса на основе табаско и пикантного горчично-майонезного соуса.");
-        burgersSpicy3.setPrice(BigDecimal.valueOf(629.99));
+        burgersSpicy3.setPrice(BigDecimal.valueOf(700));
         burgersSpicy3.setCategory(spicyBurgers);
         productRepository.save(burgersSpicy3);
 
-        //--- Товары для категория "Напитки" ---
+        // Товары для категории "Напитки"
 
-        //Товары для категория "Газированные напитки"
+        // Товары для категория "Газированные напитки"
 
         Product drinksCarbonated1 = new Product();
-        drinksCarbonated1.setName("Кола");
-        drinksCarbonated1.setDescription("Классическая сладка газировка");
-        drinksCarbonated1.setPrice(BigDecimal.valueOf(111.99));
+        drinksCarbonated1.setName("Байкал");
+        drinksCarbonated1.setDescription("Пейте без остановки напитки из Черноголовки");
+        drinksCarbonated1.setPrice(BigDecimal.valueOf(100));
         drinksCarbonated1.setCategory(carbonatedDrinks);
         productRepository.save(drinksCarbonated1);
 
         Product drinksCarbonated2 = new Product();
-        drinksCarbonated2.setName("Кола-зеро");
-        drinksCarbonated2.setDescription("Газировка без добавления сахара. Низкокаллорийная");
-        drinksCarbonated2.setPrice(BigDecimal.valueOf(129.99));
+        drinksCarbonated2.setName("Добрый Апельсин");
+        drinksCarbonated2.setDescription("Достойное импортозамещение");
+        drinksCarbonated2.setPrice(BigDecimal.valueOf(130));
         drinksCarbonated2.setCategory(carbonatedDrinks);
         productRepository.save(drinksCarbonated2);
 
         Product drinksCarbonated3 = new Product();
-        drinksCarbonated3.setName("Кола-ванила");
-        drinksCarbonated3.setDescription("Всеми любимая Кола, но со вкусом ванили");
-        drinksCarbonated3.setPrice(BigDecimal.valueOf(139.99));
+        drinksCarbonated3.setName("Рич Биттер");
+        drinksCarbonated3.setDescription("Горький лимонный привкус позволяет вам видеть сквозь стены");
+        drinksCarbonated3.setPrice(BigDecimal.valueOf(150));
         drinksCarbonated3.setCategory(carbonatedDrinks);
         productRepository.save(drinksCarbonated3);
 
-        //Товары для категория "Энергетические напитки"
+        // Товары для категория "Энергетические напитки"
 
         Product drinksEnergetic1 = new Product();
         drinksEnergetic1.setName("Flash");
-        drinksEnergetic1.setDescription("Этот энергетический напиток обычно характеризуется своим ярким вкусом и высоким содержанием кофеина");
-        drinksEnergetic1.setPrice(BigDecimal.valueOf(81.99));
+        drinksEnergetic1.setDescription("Специальное издание для школьников");
+        drinksEnergetic1.setPrice(BigDecimal.valueOf(90));
         drinksEnergetic1.setCategory(energeticDrinks);
         productRepository.save(drinksEnergetic1);
 
         Product drinksEnergetic2 = new Product();
         drinksEnergetic2.setName("Burn");
-        drinksEnergetic2.setDescription("Энергетик Burn обычно известен своим освежающим вкусом и содержанием таварина");
-        drinksEnergetic2.setPrice(BigDecimal.valueOf(119.99));
+        drinksEnergetic2.setDescription("Сжигает твое здоровье");
+        drinksEnergetic2.setPrice(BigDecimal.valueOf(130));
         drinksEnergetic2.setCategory(energeticDrinks);
         productRepository.save(drinksEnergetic2);
 
         Product drinksEnergetic3 = new Product();
-        drinksEnergetic3.setName("Redbull");
-        drinksEnergetic3.setDescription("Он славится своим характерным вкусом, содержанием кофеина и таурина");
-        drinksEnergetic3.setPrice(BigDecimal.valueOf(139.99));
+        drinksEnergetic3.setName("RedBull");
+        drinksEnergetic3.setDescription("Все равно не поможет написать тебе курсач за ночь");
+        drinksEnergetic3.setPrice(BigDecimal.valueOf(150));
         drinksEnergetic3.setCategory(energeticDrinks);
         productRepository.save(drinksEnergetic3);
 
-        //Товары для категория "Соки"
+        // Товары для категория "Соки"
 
         Product drinksJuice1 = new Product();
         drinksJuice1.setName("Любимый");
         drinksJuice1.setDescription("Сок Любимый обычно ассоциируется с натуральными вкусами фруктов и ягод.");
-        drinksJuice1.setPrice(BigDecimal.valueOf(99.99));
+        drinksJuice1.setPrice(BigDecimal.valueOf(100));
         drinksJuice1.setCategory(juiceDrinks);
         productRepository.save(drinksJuice1);
 
         Product drinksJuice2 = new Product();
         drinksJuice2.setName("Добрый");
         drinksJuice2.setDescription("Сок Добрый известен своим свежим и приятным вкусом");
-        drinksJuice2.setPrice(BigDecimal.valueOf(119.99));
+        drinksJuice2.setPrice(BigDecimal.valueOf(150));
         drinksJuice2.setCategory(juiceDrinks);
         productRepository.save(drinksJuice2);
 
         Product drinksJuice3 = new Product();
         drinksJuice3.setName("Рич");
         drinksJuice3.setDescription("Сок Рич обычно характеризуется высоким содержанием питательных веществ, таких как витамины С и Е, бета-каротин и другие.");
-        drinksJuice3.setPrice(BigDecimal.valueOf(139.99));
+        drinksJuice3.setPrice(BigDecimal.valueOf(200));
         drinksJuice3.setCategory(juiceDrinks);
         productRepository.save(drinksJuice3);
 
-        //Товары для категория "Другие"
+        // Товары для категория "Другие"
 
         Product drinksOther1 = new Product();
-        drinksOther1.setName("Вода негазированная");
-        drinksOther1.setDescription("Простая вода, наполненная минералами");
-        drinksOther1.setPrice(BigDecimal.valueOf(49.99));
+        drinksOther1.setName("Вода");
+        drinksOther1.setDescription("Боржоми лечит ваши почки");
+        drinksOther1.setPrice(BigDecimal.valueOf(100));
         drinksOther1.setCategory(otherDrinks);
         productRepository.save(drinksOther1);
 
         Product drinksOther2 = new Product();
         drinksOther2.setName("Чай");
-        drinksOther2.setDescription("Фруктовый чай, с Кавказских гор");
-        drinksOther2.setPrice(BigDecimal.valueOf(89.99));
+        drinksOther2.setDescription("Чай липтон");
+        drinksOther2.setPrice(BigDecimal.valueOf(90));
         drinksOther2.setCategory(otherDrinks);
         productRepository.save(drinksOther2);
 
         Product drinksOther3 = new Product();
         drinksOther3.setName("Кофе");
-        drinksOther3.setDescription("Классическое эспрессо.");
-        drinksOther3.setPrice(BigDecimal.valueOf(89.99));
+        drinksOther3.setDescription("Латте");
+        drinksOther3.setPrice(BigDecimal.valueOf(150));
         drinksOther3.setCategory(otherDrinks);
         productRepository.save(drinksOther3);
 
